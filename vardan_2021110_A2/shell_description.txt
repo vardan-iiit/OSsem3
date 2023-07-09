@@ -1,0 +1,32 @@
+A little description on the assignment :
+
+    I have created a shell which is cabable of handling some particular commands.My main file is main.c which is used to call executable of other c programs of differernt commands.
+    I have created a Makefile to compile all of them and run the shell.For the commands they can be executed in two different ways
+
+
+    1.by using fork() and exec() family
+    2.by using pthread_create() and system() command
+
+
+
+
+Following are the internal commands handled by the shell:-
+
+1.pwd (pwd -L, pwd -P)
+2.cd
+3.echo(echo -n ,echo -E)
+
+Following are the external commands handled by the shell(both by threads and fork-exec usage):-
+
+1.ls,ls -l,ls -a
+2.date,date +%y,date +%B
+3.mkdir,mkdir -v,mkdir -p
+4.rm, rm -i, rm -f
+5.cat, cat -A, cat -b
+
+Types of  error handled by the system
+
+1.wrong commands error
+2.fork error
+3.wrong option error(printed by the system if we give wrong option as argument)
+

@@ -1,0 +1,3 @@
+all:
+	gcc assignment3Q1.2.c  -o os
+	./os
